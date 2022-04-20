@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+</head>
+
+<body>
+    <script>
+        // JS string methods - string length 
+
+        let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        let length = txt.length;
+        console.log(length)
+
+
+        //str.slice 
+
+        let str = "Apple, Banana, Kiwi";
+        let part = str.slice(7, 13);
+        console.log(part);
+
+        let str2 = "Apple, Banana, Kiwi";
+        let part2 = str.slice(-12, -6);
+        console.log(part2);
+
+        let part3 = str.slice(7);
+        console.log(part3);
+
+        let part4 = str.slice(-12);
+        console.log(part4);
+
+        //str.substring
+
+        let str5 = "Apple, Banana, Kiwi";
+        let part5 = str.substring(7, 13);
+        console.log(part5);
+
+        //str.substr()  -- second parameter is the length of the extracted part
+
+        let str6 = "Apple, Banana, Kiwi";
+        let part6 = str.substr(7, 6);
+        console.log(part6);
+
+        let str7 = "Apple, Banana, Kiwi";
+        let part7 = str.substr(7);
+        console.log(part7);
+
+        let str8 = "Apple, Banana, Kiwi";
+        let part8 = str.substr(-4);
+        console.log(part8);
+
+        // replacing string content
+
+        let text = "Please visit Microsoft!";
+        let newText = text.replace("Microsoft", "TheOdinProject");
+        console.log(text);
+        console.log(newText);
+
+
+        // replace() is case sensitive  > use regular expression to match 
+
+        let text2 = "Please visit Microsoft!";
+        let newText2 = text2.replace(/MICROSOFT/i, "W3Schools");
+        console.log(newText2);
+
+        // this one replaces all Microsoft with the /g flag on the regular expression
+
+        let text3 = "Please visit Microsoft and Microsoft !";
+        let newText3 = text3.replace(/Microsoft/g, "W3Schools");
+        console.log(newText3);
+
+        // converting to upper and lower case 
+
+        let text4 = "Hello World!";
+        let text5 = text4.toUpperCase();
+        console.log(text5);
+        text6 = text5.toLowerCase();
+        console.log(text6);
+        
+
+
+    </script>
+</body>
+
+</html>
