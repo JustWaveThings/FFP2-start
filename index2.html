@@ -136,9 +136,29 @@
         let text17 = "Now it’s time for the fun stuff… So far we haven’t done much with our programming that you couldn’t do with simple math skills. Sure, we’ve told our computer how to do the math, so that makes it quicker, but the essence of programming is teaching the computer how to make decisions in order to do more involved things. Conditionals are how we do that.";
 
         console.log(text17.split(","));
+
+        //Conditionals
+
+        console.log(2 > 1);  // true (correct)
+        console.log(2 == 1); // false (wrong)
+        console.log(2 != 1); // true (correct)
+
+        // assigning comparison to a variable
+
+        let result = 5 > 4; // assign the result of the comparison
+        console.log(result); // true
+
+        //JavaScript uses the so-called “dictionary” or “lexicographical” order. Not a real dictionary, but Unicode order
+
+        console.log('Z' > 'A'); // true
+        console.log('Glow' > 'Glee'); // true
+        console.log('Bee' > 'Be'); // true
+
+        //comparing values of different types
+
+        console.log('2' > 1); // true, string '2' becomes a number 2
+        console.log('01' == 1); // true, string '01' becomes a number 1
         
-
-
 
     </script>
 </body>
