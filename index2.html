@@ -108,7 +108,37 @@
         let padded3 = text14.padEnd(4, "x");
         console.log(padded3);
 
+        // padEnd etc is a STIRNG method, numbers must be converted to a string first
+
+        let numb = 5;
+        let text15 = numb.toString();
+        let padded4 = text15.padEnd(4, "0");
+        console.log(padded4);
+
+        //extracting string characters 
+        // charAt()
+
+        let text16 = "HELLO WORLD";
+        let char = text16.charAt(0);
+        console.log(char);
+
+        //property access
+
+        let char2 = text16[0];
+        console.log(char2);
+
+        // converting string to array
+
+        text.split(",")    // Split on commas
+        text.split(" ")    // Split on spaces
+        text.split("|")    // Split on pipe
+
+        let text17 = "Now it’s time for the fun stuff… So far we haven’t done much with our programming that you couldn’t do with simple math skills. Sure, we’ve told our computer how to do the math, so that makes it quicker, but the essence of programming is teaching the computer how to make decisions in order to do more involved things. Conditionals are how we do that.";
+
+        console.log(text17.split(","));
         
+
+
 
     </script>
 </body>
