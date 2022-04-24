@@ -7,6 +7,10 @@
 </head>
 
 <body>
+        
+<p>Display "Good day!" if the hour is less than 18:00:</p>
+<p id="demo">Good Evening!</p>
+
     <script>
         // JS string methods - string length 
 
@@ -158,7 +162,25 @@
 
         console.log('2' > 1); // true, string '2' becomes a number 2
         console.log('01' == 1); // true, string '01' becomes a number 1
-        
+
+        // if statements
+
+        // if (new Date().getHours() <  18) {
+        //         document.getElementById("demo").innerHTML = "Good day!";
+        //     }
+
+        // else statement
+
+       const hour = new Date().getHours();
+        let greeting;
+
+        if (hour < 18) {
+            greeting = "Good day";
+        } else {
+            greeting = "Good evening";
+        }
+
+        document.getElementById("demo").innerHTML = greeting;
 
     </script>
 </body>
